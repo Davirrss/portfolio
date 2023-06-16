@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-left: 2em;
+    padding-right: 2em;
+    height: 15vh;
+    background-color: darkslateblue;
+}
+
+header a {
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    font-size: 2em;
+    color: bisque;
+    transition: border-bottom 0.3s ease;
+}
+
+header a:hover,
+header a:focus {
+    border-bottom: solid 0.2em;
+}
+
+header a:focus {
+    outline: dashed 0.07em bisque;
+}
+
+body {
+    background-color: aqua;
+}
+
+@media (max-width: 720px) {
+    .link-section {
+        display: none;
+    }
+}
