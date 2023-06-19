@@ -13,14 +13,43 @@
 
 <body>
     <header>
-        <div class="link-section">
-            <a href="">Sobre</a>
+        <div class="link-header">
+            <a href="#sobre">Sobre</a>
             <a href="">Contato</a>
             <a href="">Interação</a>
         </div>
     </header>
-    <p>lo</p>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <div class="container-principal">
+        <section id="sobre">
+            <div class="sobre-eu-div">
+                <div class="sobre-eu-imagem">
+                    <img src="lib/imagens/foto-portfolio.png">
+                </div>
+                <div class="sobre-eu-escrita">
+                    <p>
+                        Meu nome é Davi Rodrigues e nasci em 3 de novembro de 2005. Iniciei meus estudos na área de
+                        programação em
+                        28 de fevereiro de 2023 e estou em busca de estágios para ampliar minha base na
+                        área de desenvolvimento web e aprimorar minhas competências profissionais.
+                    </p>
+                </div>
+            </div>
+            <div class="sobre-eu-competencias">
+                <div class="sobre-eu-competencias-botao">
+                    <button id="comp1" class="comp-active">Recursos</button>
+                    <button id="comp2">Objetivos</button>
+                    <button id="comp3">Pessoal</button>
+                </div>
+                <div class="sobre-eu-competencias-info">
+                    <p id="comp1-info" style="display: block;" class="comp-info-active">Recursos legais</p>
+                    <p id="comp2-info" style="display: none;">Objetivo</p>
+                    <p id="comp3-info" style="display: none;">PEsoaslal</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="./lib/main.js"></script>
 </body>
 
