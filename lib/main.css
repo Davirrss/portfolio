@@ -96,7 +96,52 @@ body {
 }
 
 .sobre-eu-competencias {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
     color: bisque;
+    border: solid 2px white;
+    border-radius: 1em;
+}
+
+.sobre-eu-competencias-botao {
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.sobre-eu-competencias-botao button {
+    padding: 1em;
+    width: 100%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.sobre-eu-competencias-botao button:last-child {
+    border-top-right-radius: 1em;
+}
+
+.sobre-eu-competencias-botao button:first-child {
+    border-top-left-radius: 1em;
+}
+
+.sobre-eu-competencias-botao button:hover {
+    background-color: brown;
+}
+
+.sobre-eu-competencias-botao .comp-active {
+    background-color: brown;
+}
+
+.sobre-eu-competencias-info {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    padding: 1em;
+    flex-wrap: wrap;
+    word-break: normal;
+    font-size: 1.2em;
 }
 
 @media (max-width: 720px) {
