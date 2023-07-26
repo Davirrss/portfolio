@@ -147,6 +147,11 @@ body {
 .sobre-eu-competencias-info span {
     cursor: pointer;
     color: brown;
+    transition: color 0.5s ease;
+}
+
+.sobre-eu-competencias-info span:hover {
+    color: rgb(255, 156, 156);
 }
 
 .base-div-info {
@@ -157,11 +162,53 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 9999;
+    font-family: 'Ubuntu', sans-serif;
+    backdrop-filter: blur(10px);
+}
+
+.base-div-info-bfechar {
+    display: flex;
+    justify-content: end;
+    /* align-items: end; */
+    padding: 2em;
+}
+
+.base-div-info-bfechar button {
+    background: none;
+    border: none;
+    scale: 1.5;
+    transition: color 0.5s ease, background-color 0.5s ease;
+    padding: 1.1em;
+    border-radius: 50px;
+}
+
+.base-div-info-bfechar button:hover {
+    color: rgb(219, 0, 0);
+    background-color: rgba(0, 0, 0, 0.192);
+}
+
+.base-div-info-titulo {
+    display: flex;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
 }
 
 .base-div-info-conteudo {
+    justify-content: center;
+    padding-top: 1.5em;
     display: flex;
-    color: blue;
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+.base-div-info-conteudo p {
+    word-wrap: break-word;
 }
 
 @media (max-width: 720px) {
